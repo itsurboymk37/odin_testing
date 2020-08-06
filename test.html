@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container"></div>
+</body>
+<script>
+    const container = document.querySelector('#container');
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = 'This is the glorious text-content!';
+
+    container.appendChild(content);
+
+    const pred = document.createElement('p');
+    pred.style.color = 'red'
+    pred.textContent = "I'm red!"
+    container.appendChild(pred)
+
+    const h3blue = document.createElement('h3')
+    h3blue.style.color = 'blue'
+    h3blue.textContent = "I'm a blue h3!"
+    container.appendChild(h3blue)
+
+    const div = document.createElement('div')
+    div.style.cssText = 'background: pink; color: purple'
+    
+    const h1div = document.createElement('h1')
+    h1div.textContent = "I'm in a div!"
+
+    const p = document.createElement('p')
+    p.textContent = "Me too!"
+
+    div.appendChild(h1div)
+    div.appendChild(p)
+    container.appendChild(div)
+</script>
+</html>
